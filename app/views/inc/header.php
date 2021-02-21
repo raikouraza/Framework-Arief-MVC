@@ -7,9 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel ="stylesheet" href="<?php echo URLROOT; ?>/css/bootstrap.min.css">
 
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel ="stylesheet" href="<?php echo URLROOT; ?>/css/main.css">
 
+    <link rel ="stylesheet" href="<?php echo URLROOT; ?>/css/main.css">
+    <link rel ="stylesheet" href="<?php echo URLROOT; ?>/css/fontawesome.min.css">
+    <link rel ="stylesheet" href="<?php echo URLROOT; ?>/css/brands.min.css">
+    <link rel ="stylesheet" href="<?php echo URLROOT; ?>/css/solid.min.css">
+    <link rel ="stylesheet" href="<?php echo URLROOT; ?>/css/all.min.css">
+
+    <title><?php echo SITENAME;?></title>
 
 </head>
 <body>

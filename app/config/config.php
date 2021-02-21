@@ -11,3 +11,5 @@
     define('URLROOT','http://localhost/budgeting');
     //site name
     define('SITENAME','budgeting');
+    //app version
+    define('APPVERSION','Version : 0.0.1');
