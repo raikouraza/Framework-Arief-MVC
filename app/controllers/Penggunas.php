@@ -6,9 +6,11 @@
         $this->userModel = $this->model('Pengguna');
      }
 
+
      public function register()
-     {
+         {
          if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
              //ngeproses form
              //sanitiasi data post
              $_POST = filter_input_array(INPUT_POST,FILTER_SANITIZE_STRING);
@@ -165,13 +167,14 @@
              $this->view('penggunas/login', $data);
          }
      }
+     //session user variabel semuanya dibikin disini, $user ngambil data dari database sesuai dnegan kolom yang ada di tabel database.
      public function createUserSession($user){
          $_SESSION['user_id'] = $user->id;
          $_SESSION['user_email'] = $user->pengguna_email;
          $_SESSION['user_role'] = $user->pengguna_role;
          $_SESSION['user_departemen'] = $user->pengguna_departemen;
          $_SESSION['user_name'] = $user->pengguna_nama;
-         redirect('pages/index');
+         redirect('anggarans/index');
      }
      public function logout(){
         unset($_SESSION['user_id']);

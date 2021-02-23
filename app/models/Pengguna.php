@@ -48,4 +48,23 @@
                 return false;
             }
         }
+
+        public function getDepartments(){
+            $this->db->query('SELECT departemen_nama FROM tbdepartemen ORDER BY departemen_nama ASC');
+            $results =$this->db->resultSet();
+            return $results;
+        }
+        public function getRoles(){
+            $this->db->query('SELECT role_nama FROM tbrole ORDER BY role_nama DESC');
+            $results =$this->db->resultSet();
+            return $results;
+        }
+        public function getUserById($id){
+            $this->db->query('SELECT * FROM tbpengguna WHERE id = :id');
+            //bind value
+            $this->db->bind(':id',$id);
+            $row = $this->db->single();
+            return $row;
+        }
+
     }

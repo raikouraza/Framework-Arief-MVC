@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4de380f7-52d4-4db4-8b26-f59ffd31ee5b" name="Default Changelist" comment="" />
+    <list default="true" id="4de380f7-52d4-4db4-8b26-f59ffd31ee5b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/budgeting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/budgeting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Pages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Penggunas.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Penggunas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/session_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/session_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Pengguna.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Pengguna.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/inc/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/inc/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/inc/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/penggunas/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/penggunas/register.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +28,9 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1nxD3ynSi6GzRK1rRDc7eSDyDmj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -56,7 +69,8 @@
       <workItem from="1613542253624" duration="634000" />
       <workItem from="1613706247981" duration="10966000" />
       <workItem from="1613794763562" duration="119000" />
-      <workItem from="1613794889981" duration="26128000" />
+      <workItem from="1613794889981" duration="47913000" />
+      <workItem from="1614002285139" duration="11531000" />
     </task>
     <servers />
   </component>
@@ -72,10 +86,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="278" key="FileChooserDialogImpl/1920.-3.1920.1040/-768.-123.768.1326/0.0.1920.1040@0.0.1920.1040" timestamp="1613527227360" />
-    <state x="794" y="452" key="NewPhpFileDialog" timestamp="1613881473975">
+    <state x="794" y="452" key="NewPhpFileDialog" timestamp="1613979450096">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="452" key="NewPhpFileDialog/1920.-3.1920.1040/0.0.1920.1040/-768.-123.768.1326@0.0.1920.1040" timestamp="1613881473975" />
+    <state x="794" y="452" key="NewPhpFileDialog/1920.-3.1920.1040/0.0.1920.1040/-768.-123.768.1326@0.0.1920.1040" timestamp="1613979450096" />
     <state x="609" y="138" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1613808748609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -84,9 +98,10 @@
       <screen x="1920" y="-3" width="1920" height="1040" />
     </state>
     <state x="2536" y="239" key="run.anything.popup/1920.-3.1920.1040/0.0.1920.1040/-768.-123.768.1326@1920.-3.1920.1040" timestamp="1613797598590" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1613889039778">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614093373254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-3.1920.1040/0.0.1920.1040/-768.-123.768.1326@0.0.1920.1040" timestamp="1613889039778" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-3.1920.1040/-768.-123.768.1326/0.0.1920.1040@0.0.1920.1040" timestamp="1614093373254" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-3.1920.1040/0.0.1920.1040/-768.-123.768.1326@0.0.1920.1040" timestamp="1613974115311" />
   </component>
 </project>

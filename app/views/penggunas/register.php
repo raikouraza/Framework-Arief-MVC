@@ -1,4 +1,20 @@
 <?php   require APPROOT . '/views/inc/header.php'; ?>
+
+    <!-- bar bar sedikit untuk nampilin list departemen -->
+    <?php $departments = $this->userModel->getDepartments();
+    //ngambil data anggaran dari db dan ditampilin di register
+    $data2= [
+        'departments'=>$departments
+    ];
+    $this->view('penggunas/register',$data2);?>
+    <!-- bar bar sedikit untuk nampilin list departemen selesai -->
+    <?php $roles = $this->userModel->getRoles();
+    $data3 = [
+        'roles'=>$roles
+    ];
+    $this->view('penggunas/register',$data3)
+    ?>
+
 <div class="row">
     <div class="col-md-6 mx-auto">
         <div class="card card-body bg-light mt-5">
@@ -15,19 +31,32 @@
                     <input type="email" name="email" class="form-control form-control-lg <?php echo (!empty($data['email_error'])) ? 'is-invalid' : '';?>" value="<?php echo $data['email']; ?>"required>
                     <span class="invalid-feedback"><?php echo $data['email_error'];?></span>
                 </div>
-                <!-- departemen ambil dari database tb department -->
+
+
+
+                <!-- select nyoba -->
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Nama Departemen :</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <?php foreach($data2['departments'] as $department) : ?>
+                            <option value="<?php echo $department->departemen_nama;?>"> <?php echo $department->departemen_nama;?> </option>
+                        <?php endforeach;?>
+                    </select>
+                </div>
+                <?php  ?>
+
+
+                <!-- role pengguna  ada Direktur Utama, Direktur, Manager, Kepala Divisi -->
 
                 <div class="form-group">
-                    <label for="nama_departemen">Departemen : <sup>*</sup></label>
-                    <input type="text" name="nama_departemen" class="form-control form-control-lg <?php echo (!empty($data['nama_departemen_error'])) ? 'is-invalid' : '';?>" value="<?php echo $data['nama_departemen']; ?>"required>
-                    <span class="invalid-feedback"><?php echo $data['nama_departemen_error'];?></span>
+                    <label for="exampleFormControlSelect1">Jabatan :</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <?php foreach($data3['roles'] as $role) : ?>
+                            <option value="<?php echo $role->role_nama;?>"> <?php echo $role->role_nama;?> </option>
+                        <?php endforeach;?>
+                    </select>
                 </div>
-                <!-- role pengguna  ada Direktur Utama, Direktur, Manager, Kepala Divisi -->
-                <div class="form-group">
-                    <label for="role">Role : <sup>*</sup></label>
-                    <input type="text" name="role" class="form-control form-control-lg <?php echo (!empty($data['role_error'])) ? 'is-invalid' : '';?>" value="<?php echo $data['role']; ?>"required>
-                    <span class="invalid-feedback"><?php echo $data['role_error'];?></span>
-                </div>
+                <?php  ?>
                 <div class="form-group">
                     <label for="password">Password: <sup>*</sup></label>
                     <input type="password" name="password" class="form-control form-control-lg <?php echo (!empty($data['password_error'])) ? 'is-invalid' : '';?>" value="<?php echo $data['password']; ?>"required>

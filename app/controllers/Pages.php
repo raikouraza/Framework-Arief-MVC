@@ -5,7 +5,10 @@
 
         }
         public function index(){
+            if(isLoggedIn()){
+                redirect('anggarans');
 
+            }
             $data = ['title'=>'Welcome',
                 'description'=>'Welcome to the e-budgeting application'
                ];
